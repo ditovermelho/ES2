@@ -1,0 +1,3 @@
+//comandos cdm para execução do teste test_plan
+python./test_plan.py  -v
+python./test_plan_mult.py  -v

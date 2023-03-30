@@ -1,5 +1,11 @@
+// instalação do k6
+choco install k6
+// choco foi instalada junto com o NodeJs
+
+//comando cdm para inicializar o k6
 npm install k6 -init
 
+//comandos cdm para execução do teste k6
 k6 run index.js --vus 5 --duration 60s
 k6 run index.js --vus 20 --duration 60s
 k6 run index.js --vus 60 --duration 60s

@@ -1,0 +1,12 @@
+//instalação no local do projeto do pacote ts-node.
+npm install -D typescript
+npm install -D ts-node
+
+//instalação do jest
+npm install --save-dev jest
+
+//comando cdm para inicializar o jest
+npx jest --init
+
+//comandos cdm para execução do teste jest
+npm test
