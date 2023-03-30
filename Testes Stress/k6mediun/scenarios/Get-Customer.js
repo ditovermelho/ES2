@@ -18,9 +18,9 @@ export default function() {
     GetCustomerFailRate.add(res.status == 0 || res.status > 399);
     GetCustomerSuccessRate.add(res.status < 399);
 
-    let duration = 'Max Duration ${4000/1000}s'
+    let duration = 'Max Duration ${1000/1000}s'
     if(!check(res, {
-        'max duration': (r) => r.timings.duration < 4000,
+        'max duration': (r) => r.timings.duration < 1000,
     })){
         fail(durationMsg);
     }
