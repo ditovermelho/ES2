@@ -1,0 +1,5 @@
+npm install k6 -init
+
+k6 run index.js --vus 5 --duration 60s
+k6 run index.js --vus 20 --duration 60s
+k6 run index.js --vus 60 --duration 60s
