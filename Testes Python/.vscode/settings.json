@@ -1,0 +1,31 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "code-runner.executorMap": {
+        "python": "venv/Scripts/python"
+    },
+    "python.testing.pytestArgs": [
+        "-W ignore::DeprecationWarning:invoke.loader",
+        "-s",
+        "--rootdir=."
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+    ]
+}
+/*
+Criação do Ambiente Virtual:
+Use o comado:
+python -m venv venv
+
+Caso não consiga acessar a .\Activate.ps1
+
+Use o comado aseguir no powershell:
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+*/
